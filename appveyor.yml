@@ -12,9 +12,9 @@ environment:
   global:
       MINGW_32: C:\mingw-w64\i686-6.3.0-posix-dwarf-rt_v5-rev1\mingw32\bin
       MINGW_64: C:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin
-      OPENBLAS_32: "https://3f23b170c54c2533c070-1c8a9b3114517dc5fe17b7c3f8c63a43.ssl.cf2.rackcdn.com/openblas-2c7392f0_gcc7_1_0_win32.zip"
+      OPENBLAS_32: "https://3f23b170c54c2533c070-1c8a9b3114517dc5fe17b7c3f8c63a43.ssl.cf2.rackcdn.com/openblas-4fcdd244_gcc7_1_0_win32.zip"
       OPENBLAS_64: "https://3f23b170c54c2533c070-1c8a9b3114517dc5fe17b7c3f8c63a43.ssl.cf2.rackcdn.com/openblas-2c7392f0_gcc7_1_0_win64.zip"
-      OPENBLAS_32_SHA256: ce26afb8495a730fbb32e6002173194e29d0e31fcb70e9231628fe93c9f0a47a
+      OPENBLAS_32_SHA256: c6eacede8f819f8f52ee850b993fea59cea7531994aa92964f53ad05eedd343e
       OPENBLAS_64_SHA256: e9cef554889de6079a83f8f6d4ed67e07e7a8666bc105a080c0732fc8c76221b
       CYTHON_BUILD_DEP: Cython==0.26.1
       NUMPY_TEST_DEP: numpy==1.13.1
