@@ -34,7 +34,6 @@ environment:
       PYTHON_ARCH: 32
       NUMPY_BUILD_DEP: numpy==1.12.1
 
-  matrix:
     - PYTHON: C:\Python36-x64
       PYTHON_VERSION: 3.6
       PYTHON_ARCH: 64
