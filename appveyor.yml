@@ -12,10 +12,12 @@ environment:
   global:
       MINGW_32: C:\mingw-w64\i686-6.3.0-posix-dwarf-rt_v5-rev1\mingw32\bin
       MINGW_64: C:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1\mingw64\bin
-      OPENBLAS_32: "https://3f23b170c54c2533c070-1c8a9b3114517dc5fe17b7c3f8c63a43.ssl.cf2.rackcdn.com/openblas-4fcdd244_gcc7_1_0_win32.zip"
-      OPENBLAS_64: "https://3f23b170c54c2533c070-1c8a9b3114517dc5fe17b7c3f8c63a43.ssl.cf2.rackcdn.com/openblas-2c7392f0_gcc7_1_0_win64.zip"
-      OPENBLAS_32_SHA256: c6eacede8f819f8f52ee850b993fea59cea7531994aa92964f53ad05eedd343e
-      OPENBLAS_64_SHA256: e9cef554889de6079a83f8f6d4ed67e07e7a8666bc105a080c0732fc8c76221b
+      OPENBLAS_32: https://3f23b170c54c2533c070-1c8a9b3114517dc5fe17b7c3f8c63a43.ssl.cf2.rackcdn.com/openblas-5f998ef_gcc7_1_0_
+32.zip
+      OPENBLAS_64: https://3f23b170c54c2533c070-1c8a9b3114517dc5fe17b7c3f8c63a43.ssl.cf2.rackcdn.com/openblas-5f998ef_gcc7_1_0_
+64.zip
+      OPENBLAS_32_SHA256: 0a12804b08d475179a0411936f509b44d7512f084b4a81c2fa3abe8c9ac4ee09
+      OPENBLAS_64_SHA256: 8f11d8a5a79795a3a1ccb2326c979a0ca426e623eee93f8e35239e3c21e62cd6
       CYTHON_BUILD_DEP: Cython==0.26.1
       NUMPY_TEST_DEP: numpy==1.13.1
       TEST_MODE: fast
@@ -33,6 +35,13 @@ environment:
       PYTHON_VERSION: 3.6
       PYTHON_ARCH: 32
       NUMPY_BUILD_DEP: numpy==1.12.1
+
+  matrix:
+    - PYTHON: C:\Python36-x64
+      PYTHON_VERSION: 3.6
+      PYTHON_ARCH: 64
+      NUMPY_BUILD_DEP: numpy==1.12.1
+
 
 init:
   - "ECHO %PYTHON% %PYTHON_VERSION% %PYTHON_ARCH%"
