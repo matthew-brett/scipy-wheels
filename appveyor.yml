@@ -27,6 +27,7 @@ environment:
             jIyaD+VWmTlDGXThsKAkiLq8iljgYHiriq+kEUuW9tHj67R5BapLxLjbfco2nt8Y
       BUILD_COMMIT: c72836029
       DAILY_COMMIT: master
+      OPENBLAS_VERBOSE: 2
 
   matrix:
     - PYTHON: C:\Python36
