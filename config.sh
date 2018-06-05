@@ -23,6 +23,15 @@ function build_libs {
     local use_sudo=""
     [ -n "$IS_OSX" ] && use_sudo="sudo"
     (cd / && $use_sudo tar zxvf $tar_path)
+    # Tell scipy that OpenBLAS is in /usr/local
+    # Needed for numpy 1.8.2, at least, but not 1.9.3
+    cat << EOF > $HOME/site.cfg
+[openblas]
+libraries = openblas
+library_dirs = /usr/local/lib
+include_dirs = /usr/local/include
+runtime_library_dirs = /usr/local/lib
+EOF
 }
 
 function set_arch {
